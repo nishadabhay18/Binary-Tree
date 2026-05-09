@@ -16,17 +16,17 @@
 class Solution {
     // TC-> O(n), SC-> O(n)+O(n)
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> res=new ArrayList<>();
+        List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> q = new ArrayDeque<>();
         if(root != null) q.add(root);
-        while(q.size()!=0){
-            int size=q.size();
-            List<Integer> ans=new ArrayList<>();
-            for(int i=1;i<=size;i++){
-                TreeNode data=q.remove();
+        while(q.size() != 0){
+            int size = q.size();
+            List<Integer> ans = new ArrayList<>();
+            for(int i = 1; i<=size; i++){
+                TreeNode data = q.remove();
                 ans.add(data.val);
-                if(data.left!=null) q.add(data.left);
-                if(data.right!=null) q.add(data.right);
+                if(data.left != null) q.add(data.left);
+                if(data.right != null) q.add(data.right);
             }
             res.add(ans);
         }
