@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    // TC-> O(n), SC-> O(n)+O(n)
+    // TC-> O(n), SC-> O(n) + O(n)
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> q = new ArrayDeque<>();
