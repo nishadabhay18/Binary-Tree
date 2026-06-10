@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    // RECURSIVE VERSION TC-> O(n) SC-> O(n)+O(n) Recursion Stack Space
+    // RECURSIVE VERSION TC-> O(n) SC-> O(n) +O(n) Recursion Stack Space
     public void inorder(TreeNode root, List<Integer> ans){
         if (root== null) return;
         inorder(root.left,ans);
